@@ -1,0 +1,29 @@
+.registerContainer {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center; /*Alinha verticalmente*/
+  justify-content: center; /*Alinha horizontalmente*/
+}
+
+.registerContainer section.form {
+  width: 100%;
+  max-width: 350px;
+}
+
+.registerContainer form h1 {
+  margin-bottom: 22px;
+  font-size: 32px;
+}
+
+.registerContainer form input {
+  margin-bottom: 22px;
+}
+
+.registerContainer form input.checkBox {
+  height: 14px;
+  width: 14px;
+}

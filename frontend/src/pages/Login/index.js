@@ -18,12 +18,12 @@ export default function Login() {
           <input type="email" className="email" placeholder="E-mail" />
           <input type="password" className="password" placeholder="Senha" />
           <button className="button" type="submit">
-            Entrar
+            Entrar em Mandalore
           </button>
 
           <a href="/register">
             <FiLogIn size={16} color="#3d4e32" />
-            Não tenho cadastro
+            Torne-se um Mando
           </a>
         </form>
       </section>
