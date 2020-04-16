@@ -3,7 +3,7 @@ import { FiLogIn } from "react-icons/fi";
 
 import "./styles.css";
 
-import mando from "../../assets/logoxd.png";
+import mando from "../../assets/logoLogin.png";
 import logoMando from "../../assets/logo.png";
 
 export default function Login() {
@@ -22,7 +22,7 @@ export default function Login() {
           </button>
 
           <a href="/register">
-            <FiLogIn size={16} color="#3d4e32" />
+            <FiLogIn size={16} color="#395435" />
             Torne-se um Mando
           </a>
         </form>

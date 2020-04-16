@@ -1,11 +1,14 @@
 import React from "react";
-import { FiLogOut } from "react-icons/fi";
+
+import RegisterLogo from "../../assets/logoRegister.png";
+import lightSaber from "../../assets/light-saber.png";
 
 import "./styles.css";
 
 export default function Register() {
   return (
     <div className="registerContainer">
+      <img src={lightSaber} alt="Mando" />
       <section className="form">
         <form>
           <h1>Cadastro</h1>

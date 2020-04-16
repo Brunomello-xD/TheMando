@@ -12,6 +12,7 @@
 .registerContainer section.form {
   width: 100%;
   max-width: 350px;
+  margin-left: 150px;
 }
 
 .registerContainer form h1 {
