@@ -1,7 +1,7 @@
 import React from "react";
 import { FiLogIn } from "react-icons/fi";
 
-import lightSaber from "../../assets/light-saber.png";
+import lightSaber from "../../assets/logoRegister.png";
 
 import "./styles.css";
 

@@ -16,7 +16,7 @@
 }
 
 .login-container section.form form {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .login-container section.form form h1 {
@@ -45,4 +45,39 @@
 
 .login-container section.form form input.email {
   margin-bottom: 18px;
+}
+
+.login-container section.form section.loginFG {
+  display: flex;
+  align-items: center; /*Alinha verticalmente*/
+  justify-content: center; /*Alinha horizontalmente*/
+  margin-top: 0px;
+  margin-right: auto;
+}
+
+.login-container section.form form button.buttonLoginFG {
+  width: 100px;
+  margin-right: 22px;
+  height: 25px;
+  background: #000000;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 8px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 25px;
+  transition: filter 0.2s;
+  justify-content: center; /*Alinha horizontalmente*/
+}
+
+.login-container section.form form button.buttonLoginFG svg {
+  margin-right: 5px;
+}
+
+.login-container section.form form button.buttonLoginFG:hover {
+  filter: brightness(80%);
 }

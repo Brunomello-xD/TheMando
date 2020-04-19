@@ -1,6 +1,6 @@
 import React from "react";
 
-import logoMando from "../../assets/logo.png";
+import logoMando from "../../assets/logoMain.png";
 
 export default function Cases() {
   return (

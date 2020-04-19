@@ -1,10 +1,11 @@
 import React from "react";
 import { FiLogIn } from "react-icons/fi";
+import { FaFacebookF, FaGoogle } from "react-icons/fa";
 
 import "./styles.css";
 
 import logoLogin from "../../assets/logoLogin.png";
-import logoMando from "../../assets/logo.png";
+import logoMando from "../../assets/logoMain.png";
 
 export default function Login() {
   return (
@@ -20,6 +21,17 @@ export default function Login() {
           <button className="button" type="submit">
             Entrar em Mandalore
           </button>
+
+          <section className="loginFG">
+            <button className="buttonLoginFG">
+              <FaFacebookF size={10} color="#FFF" />
+              Facebook
+            </button>
+            <button className="buttonLoginFG">
+              <FaGoogle size={10} color="#FFF" />
+              Google
+            </button>
+          </section>
 
           <a href="/register">
             <FiLogIn size={16} color="#395435" />
