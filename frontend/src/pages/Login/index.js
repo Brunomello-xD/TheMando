@@ -3,7 +3,7 @@ import { FiLogIn } from "react-icons/fi";
 
 import "./styles.css";
 
-import mando from "../../assets/logoLogin.png";
+import logoLogin from "../../assets/logoLogin.png";
 import logoMando from "../../assets/logo.png";
 
 export default function Login() {
@@ -27,7 +27,7 @@ export default function Login() {
           </a>
         </form>
       </section>
-      <img className="imgMando" src={mando} alt="Mando" />
+      <img className="imgMando" src={logoLogin} alt="Mando" />
     </div>
   );
 }

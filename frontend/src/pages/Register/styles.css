@@ -15,16 +15,30 @@
   margin-left: 150px;
 }
 
+.registerContainer section.form form a {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #363636;
+  transition: opacity 0.2s;
+  font-weight: 500;
+}
+
+.registerContainer section.form form a:hover {
+  opacity: 0.8;
+}
+
+.registerContainer section.form form a svg {
+  margin-right: 8px;
+}
+
 .registerContainer form h1 {
   margin-bottom: 22px;
   font-size: 32px;
 }
 
 .registerContainer form input {
-  margin-bottom: 22px;
-}
-
-.registerContainer form input.checkBox {
-  height: 14px;
-  width: 14px;
+  margin-bottom: 14px;
 }
