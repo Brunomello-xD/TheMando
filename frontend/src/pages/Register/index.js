@@ -1,5 +1,6 @@
 import React from "react";
 import { FiLogIn } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 import lightSaber from "../../assets/logoRegister.png";
 
@@ -18,10 +19,10 @@ export default function Register() {
             <input type="email" placeholder="E-mail" />
             <input type="password" placeholder="Senha" />
             <button className="button">Tornar-se um Mandaloriano</button>
-            <a href="/">
+            <Link to="/">
               <FiLogIn size={16} color="#395435" />
-              Já sou cadastrado
-            </a>
+              Já tenho cadastro
+            </Link>
           </form>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FiLogIn } from "react-icons/fi";
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import "./styles.css";
 
@@ -33,10 +34,10 @@ export default function Login() {
             </button>
           </section>
 
-          <a href="/register">
+          <Link to="/register">
             <FiLogIn size={16} color="#395435" />
             Torne-se um Mando
-          </a>
+          </Link>
         </form>
       </section>
       <img className="imgMando" src={logoLogin} alt="Mando" />
