@@ -1,5 +1,6 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 import "./styles.css";
 
@@ -14,10 +15,18 @@ export default function Cases() {
         <section className="userSearch">
           <FiSearch size={18} />
           <input className="search" type="text"></input>
-          <h1>Bruno</h1>
         </section>
       </section>
-      <section></section>
+      <section className="cases">
+        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
+        <hr color="black" size={1} />
+        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
+        <hr color="black" size={1} />
+        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
+        <hr color="black" size={1} />
+        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
+        <hr color="black" size={1} />
+      </section>
     </div>
   );
 }
