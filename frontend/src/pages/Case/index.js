@@ -5,7 +5,7 @@ import logoMando from "../../assets/logoMain@2.png";
 
 import "./styles.css";
 
-export default function newCase() {
+export default function Case() {
   return (
     <div className="main">
       <section className="menu">
@@ -14,9 +14,15 @@ export default function newCase() {
         </Link>
       </section>
 
-      <section className="newCase">
-        <input type="text" />
-        <textarea></textarea>
+      <section className="description">
+        <h1>Título do caso</h1>
+        <h2>
+          The Mandalorian é uma série de televisão de ópera espacial americana
+          programada que estreou no Disney+ em 12 de novembro de 2019. Instalada
+          no universo de Star Wars, a série acontece alguns anos após os eventos
+          de Return of the Jedi e segue um solitário Gunfighter mandaloriano
+          além dos limites da Nova República.
+        </h2>
       </section>
     </div>
   );

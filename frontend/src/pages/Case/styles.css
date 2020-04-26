@@ -1,13 +1,17 @@
 .main section.menu {
   margin-top: 30px;
   margin-left: 60px;
+  margin-right: 60px;
   margin-bottom: 32px;
 }
 
-.main section.newCase {
-  display: flex;
+.main section.description {
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
-.main section.newCase input {
-  margin-bottom: 32px;
+.main section.description h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
