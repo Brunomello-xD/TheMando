@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import logoMando from "../../assets/logoMain@2.png";
+import logoPerfilD from "../../assets/logoPerfilD.png";
 
 import "./styles.css";
 
@@ -12,6 +13,11 @@ export default function Case() {
         <Link to="/cases">
           <img src={logoMando} alt="Mando" />
         </Link>
+      </section>
+
+      <section className="userTopic">
+        <img src={logoPerfilD} alt="TheMando" />
+        <h3>Bruno Mello</h3>
       </section>
 
       <section className="description">

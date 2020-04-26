@@ -5,13 +5,32 @@
   margin-bottom: 32px;
 }
 
+.main section.userTopic {
+  display: flex;
+  justify-content: left;
+  justify-items: left;
+
+  margin-left: 62px;
+  margin-right: 60px;
+  margin-bottom: 4px;
+}
+
 .main section.description {
-  margin-top: 80px;
   margin-left: 60px;
   margin-right: 60px;
+  background-color: #9fa4a8;
+  border-radius: 10px;
 }
 
 .main section.description h1 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 30px;
+  margin-left: 8px;
+}
+
+.main section.description h2 {
+  font-size: 18px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
