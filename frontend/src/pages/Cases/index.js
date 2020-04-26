@@ -1,5 +1,5 @@
 import React from "react";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiPlus } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 import "./styles.css";
@@ -10,21 +10,32 @@ export default function Cases() {
   return (
     <div className="main">
       <section className="menu">
-        <img src={logoMando} alt="Mando" />
+        <Link to="/cases">
+          <img src={logoMando} alt="Mando" />
+        </Link>
 
         <section className="userSearch">
+          <input className="search" type="text" placeholder=" Pesquisar" />
           <FiSearch size={18} />
-          <input className="search" type="text"></input>
         </section>
       </section>
+
+      <section className="newCase">
+        <Link to="/newcase">
+          <button className="newCase">
+            <FiPlus size={26} />
+          </button>
+        </Link>
+      </section>
+
       <section className="cases">
-        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
+        <Link className="case" to="/case">
+          Primeiros passos de um Mandaloriano
+        </Link>
         <hr color="black" size={1} />
-        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
-        <hr color="black" size={1} />
-        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
-        <hr color="black" size={1} />
-        <Link to="/case">Primeiros passos de um Mandaloriano</Link>
+        <Link className="case" to="/case">
+          Primeiros passos de um Mandaloriano
+        </Link>
         <hr color="black" size={1} />
       </section>
     </div>

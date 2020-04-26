@@ -4,7 +4,7 @@ div.main section.menu {
   margin-right: 80px;
   margin-top: 30px;
   margin-left: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 div.main section.menu section.userSearch {
@@ -14,13 +14,13 @@ div.main section.menu section.userSearch {
 
 div.main section.menu section.userSearch input.search {
   width: auto;
-  height: 20px;
-  border-radius: 5px;
+  height: 25px;
+  border-radius: 8px;
   margin-right: 8px;
 }
 
 div.main section.menu section.userSearch svg {
-  margin-right: 6px;
+  margin-top: 5px;
 }
 
 .main section.cases {
@@ -28,6 +28,35 @@ div.main section.menu section.userSearch svg {
   margin-right: 80px;
 }
 
+.main section.newCase {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+  margin-bottom: 22px;
+}
+
+.main section.newCase button.newCase {
+  display: flex;
+  justify-content: flex-start;
+  height: 32px;
+  width: 32px;
+  background: #395435;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: 350;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 45px;
+  transition: filter 0.2s;
+}
+
+.main section.newCase button.newCase:hover {
+  filter: brightness(90%);
+}
 .main section.cases a {
   font-size: 18px;
   font-weight: bold;

@@ -36,7 +36,7 @@
 }
 
 .login-container section.form form a:hover {
-  opacity: 0.8;
+  filter: brightness(90%);
 }
 
 .login-container section.form form a svg {
@@ -72,7 +72,7 @@
   font-size: 10px;
   line-height: 30px;
   transition: filter 0.2s;
-  justify-content: center; /*Alinha horizontalmente*/
+  justify-content: center;
 }
 
 .login-container section.form form button.buttonLoginFG svg {
@@ -80,5 +80,5 @@
 }
 
 .login-container section.form form button.buttonLoginFG:hover {
-  filter: brightness(80%);
+  filter: brightness(90%);
 }
