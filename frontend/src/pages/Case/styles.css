@@ -12,7 +12,18 @@
 
   margin-left: 62px;
   margin-right: 60px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.main section.userTopic img {
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+}
+
+.main section.userTopic h3 {
+  margin-left: 6px;
+  margin-top: 4px;
 }
 
 .main section.description {

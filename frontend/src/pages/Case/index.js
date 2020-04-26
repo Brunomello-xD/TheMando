@@ -17,7 +17,7 @@ export default function Case() {
 
       <section className="userTopic">
         <img src={logoPerfilD} alt="TheMando" />
-        <h3>Bruno Mello</h3>
+        <h3>RestlinMagnat</h3>
       </section>
 
       <section className="description">
