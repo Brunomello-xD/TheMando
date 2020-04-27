@@ -16,14 +16,16 @@
 }
 
 .main section.userTopic img {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   border-radius: 12.5px;
 }
 
 .main section.userTopic h3 {
   margin-left: 6px;
-  margin-top: 4px;
+  margin-top: 5px;
+
+  font-size: 12px;
 }
 
 .main section.description {
@@ -34,14 +36,28 @@
 }
 
 .main section.description h1 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 28px;
+
+  margin-bottom: 12px;
   margin-left: 8px;
 }
 
 .main section.description h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 8px;
   margin-left: 8px;
   margin-bottom: 8px;
+}
+
+.main section.actions {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 12px;
+}
+
+.main section.actions textarea {
+  max-width: 100%;
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
 }

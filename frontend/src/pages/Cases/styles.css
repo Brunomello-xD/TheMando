@@ -31,13 +31,17 @@ div.main section.menu section.userSearch svg {
 .main section.newCase {
   display: flex;
   justify-content: flex-end;
+  justify-items: flex-end;
   margin-right: 80px;
   margin-bottom: 22px;
 }
 
+.main section.newCase h3 {
+  margin-top: 22px;
+  margin-left: 6px;
+}
+
 .main section.newCase button.newCase {
-  display: flex;
-  justify-content: flex-start;
   height: 32px;
   width: 32px;
   background: #696969;
@@ -57,6 +61,7 @@ div.main section.menu section.userSearch svg {
 .main section.newCase button.newCase:hover {
   filter: brightness(90%);
 }
+
 .main section.cases a {
   font-size: 18px;
   font-weight: bold;

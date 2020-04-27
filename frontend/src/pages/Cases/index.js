@@ -26,6 +26,7 @@ export default function Cases() {
             <FiPlus size={26} />
           </button>
         </Link>
+        <h3>Novo Tópico</h3>
       </section>
 
       <section className="cases">

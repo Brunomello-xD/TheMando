@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FiMessageSquare } from "react-icons/fi";
 
 import logoMando from "../../assets/logoMain@2.png";
 import logoPerfilD from "../../assets/logoPerfilD.png";
@@ -29,6 +30,15 @@ export default function Case() {
           de Return of the Jedi e segue um solitário Gunfighter mandaloriano
           além dos limites da Nova República.
         </h2>
+      </section>
+
+      <section className="actions">
+        <textarea cols="30" rows="10"></textarea>
+
+        <button>
+          <FiMessageSquare size={18} />
+          Responder
+        </button>
       </section>
     </div>
   );
