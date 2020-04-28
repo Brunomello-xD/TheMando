@@ -52,8 +52,9 @@
 }
 
 .main div.mainMenu section.menu a.perfil img {
-  width: 64px;
-  border-radius: 32px;
+  width: 50px;
+  border-radius: 25px;
+  margin-top: 14px;
 }
 
 .main section.newCase {
