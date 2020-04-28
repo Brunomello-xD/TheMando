@@ -1,9 +1,15 @@
+.main div.mainMenu {
+  background-color: #696969;
+  height: 115px;
+  margin-bottom: 20px;
+}
+
 .main div.mainMenu section.contact {
   background-color: #696969;
   display: flex;
   justify-items: flex-end;
   justify-content: flex-end;
-  margin-right: 80px;
+  margin-right: 150px;
   font-size: 8px;
   color: #363636;
 }
@@ -37,18 +43,12 @@
   color: black;
 }
 
-.main div.mainMenu {
-  background-color: #696969;
-  height: 115px;
-  margin-bottom: 20px;
-}
-
 .main div.mainMenu section.menu {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  margin-right: 80px;
-  margin-left: 60px;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 .main div.mainMenu section.menu a.perfil img {
