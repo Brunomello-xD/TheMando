@@ -12,21 +12,29 @@
   margin-top: 2px;
 }
 
+.main div.mainMenu section.contact a {
+  text-decoration: none;
+}
+
 .main div.mainMenu section.contact svg.github {
   margin-right: 4px;
+  margin-top: 4px;
 }
 
 .main div.mainMenu section.contact h1.github {
   margin-top: 4px;
+  color: black;
 }
 
 .main div.mainMenu section.contact svg.linkedin {
-  margin-left: 24px;
+  margin-left: 26px;
   margin-right: 4px;
+  margin-top: 4px;
 }
 
 .main div.mainMenu section.contact h1.linkedin {
   margin-top: 4px;
+  color: black;
 }
 
 .main div.mainMenu {

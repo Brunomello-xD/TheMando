@@ -16,7 +16,10 @@ export default function Cases() {
           <a href="https://github.com/Brunomello-xD" target="_blank">
             <FaGithub className="github" size={12} color="#010601" />
           </a>
-          <h1 className="github">GitHub</h1>
+
+          <a href="https://github.com/Brunomello-xD" target="_blank">
+            <h1 className="github">GitHub</h1>
+          </a>
 
           <a
             href="https://www.linkedin.com/in/bruno-mello-14058819b/"
@@ -24,7 +27,12 @@ export default function Cases() {
           >
             <FaLinkedin className="linkedin" size={12} color="#0c77b6" />
           </a>
-          <h1 className="linkedin">LinkedIn</h1>
+          <a
+            href="https://www.linkedin.com/in/bruno-mello-14058819b/"
+            target="_blank"
+          >
+            <h1 className="linkedin">LinkedIn</h1>
+          </a>
         </section>
         <section className="menu">
           <Link to="/cases">
