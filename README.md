@@ -1,10 +1,8 @@
 # TheMando
-
 <h2>Mobile</h2>
 <h3>Under development.</h3>
-<hr>
-<h2>Front-end</h2>
 
+<h2>Front-end</h2>
 <h3>Login</h3>
 <img src="frontend/src/imgGit/imgLogin.png">
 <h3>Register</h3>
