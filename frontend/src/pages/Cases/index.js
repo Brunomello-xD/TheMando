@@ -54,14 +54,13 @@ export default function Cases() {
       </section>
 
       <section className="cases">
-        <Link className="case" to="/case">
-          Primeiros passos de um Mandaloriano
-        </Link>
-        <hr color="black" size={1} />
-        <Link className="case" to="/case">
-          Primeiros passos de um Mandaloriano
-        </Link>
-        <hr color="black" size={1} />
+        <ul>
+          <li>
+            <Link to="/case">
+              <strong>Primeiros passos de um Mando</strong>
+            </Link>
+          </li>
+        </ul>
       </section>
     </div>
   );

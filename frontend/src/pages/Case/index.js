@@ -68,6 +68,15 @@ export default function Case() {
           Responder
         </button>
       </section>
+
+      <section className="comments">
+        <ul>
+          <li>
+            <p>RestlinMagnat</p>
+            <strong>Isto é um comentário</strong>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }
