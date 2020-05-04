@@ -2,10 +2,14 @@ const express = require("express");
 
 const routes = express.Router();
 
-routes.get("/users", (request, response) => {
+routes.post("/users", (request, response) => {
+  const body = request.body;
+
+  console.log(body);
+
   return response.json({
-    evento: "Semana OmniStack 11.0",
-    nome: "Bruno Mello",
+    evento: "EOQ Maluco",
+    nome: "Bruno FON",
   });
 });
 

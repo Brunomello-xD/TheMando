@@ -6,11 +6,6 @@ module.exports = {
     connection: {
       filename: "./src/database/db.sqlite",
     },
-    //Diretório onde as migrations vão ser criadas
-    migrations: {
-      directory: "./src/database/migrations",
-    },
-    useNullAsDefault: true,
   },
 
   staging: {
