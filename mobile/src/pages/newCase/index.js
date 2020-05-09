@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, TouchableOpacity, Image } from "react-native";
+import { View, Text, TouchableOpacity, Image, TextInput } from "react-native";
+import { Input } from 'react-native-elements'
 import { useNavigation } from "@react-navigation/native";
 
 import styles from "./styles";
@@ -12,6 +13,7 @@ export default function newCase() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image source={logoImg} />
+        <Text>Título</Text>
       </View>
     </View>
   );

@@ -31,6 +31,7 @@ export default function cases() {
         Escolha um dos tópicos abaixo e interaja com outros Mandaloriano.
       </Text>
 
+      {/**Botão cadastrar novo tópico */}
       <View style={styles.viewNewCase}>
         <TouchableOpacity
           style={styles.buttonNewCase}

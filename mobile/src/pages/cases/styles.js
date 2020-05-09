@@ -38,10 +38,11 @@ export default StyleSheet.create({
     justifyContent: "center",
   },
   textButtonNewCase: {
-    color: "#1b1b1b",
+    color: "white",
     fontWeight: "bold",
     fontSize: 16,
     marginLeft: 4,
+    color: '#1b1b1b'
   },
   viewCases: {
     marginTop: 6,
