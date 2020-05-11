@@ -15,7 +15,7 @@ export default function cases() {
   function navigateToDetailCase() {
     navigation.navigate("detailCase");
   }
-
+  //Botão "Novo tópico"
   function navigateToNewCase() {
     navigation.navigate("newCase");
   }

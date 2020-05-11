@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
+import useNavigation from "@react-navigation/native";
 import { FontAwesome5, FontAwesome, Feather } from "@expo/vector-icons";
 
 import styles from "./styles";
