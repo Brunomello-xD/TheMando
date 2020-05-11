@@ -2,9 +2,27 @@ const connection = require("../database/connection");
 
 module.exports = {
   async index(request, response) {
-    const incidents = await connection("topics").select("*");
+    const { page = 1 } = request.query;
 
-    return response.json(incidents);
+    //retorna a quantidade total de tópicos
+    const [count] = await connection("topics").count();
+
+    //irá retorna 5 tópicos por página
+    const topics = await connection("topics")
+      .join("users", "users.id", "=", "topics.user_id")
+      .limit(5)
+      .offset((page - 1) * 5)
+      .select([
+        "topics.*",
+        "users.name",
+        "users.username",
+        "users.email",
+        "users.password",
+      ]);
+
+    response.header("X-Total-Count", count["count(*)"]);
+
+    return response.json(topics);
   },
 
   async create(request, response) {
