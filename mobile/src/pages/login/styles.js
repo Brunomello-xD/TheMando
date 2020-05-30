@@ -2,12 +2,15 @@ import { StyleSheet, Dimensions } from "react-native";
 import Constants from "expo-constants";
 
 const screenWidth = Math.round(Dimensions.get("window").width) / 2;
+const screenWidthMax = Math.round(Dimensions.get("window").width);
 
 export default StyleSheet.create({
   container: {
     flex: 1,
+  },
+  containerMain: {
     paddingHorizontal: 24,
-    marginTop: Constants.statusBarHeight + 20,
+    marginTop: Constants.statusBarHeight + 24,
   },
   textWelcome: {
     marginTop: 14,
@@ -93,7 +96,6 @@ export default StyleSheet.create({
   },
   register: {
     marginTop: 8,
-
     flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
@@ -128,5 +130,10 @@ export default StyleSheet.create({
     marginLeft: 4,
 
     fontSize: 12,
+  },
+  logo: {
+    width: screenWidthMax,
+    height: 320,
+    marginLeft: 0,
   },
 });
