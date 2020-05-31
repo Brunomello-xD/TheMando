@@ -7,38 +7,29 @@ const screenWidthMax = Math.round(Dimensions.get("window").width);
 export default StyleSheet.create({
   container: {
     flex: 1,
-  },
-  containerMain: {
     paddingHorizontal: 24,
     marginTop: Constants.statusBarHeight + 24,
   },
+  viewMenu: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
   textWelcome: {
-    marginTop: 14,
+    marginTop: 24,
 
     fontSize: 20,
     fontWeight: "bold",
     fontStyle: "italic",
+    color: "#3d3d3d",
   },
-
   textLogin: {
-    marginTop: 32,
+    marginTop: 18,
+    marginBottom: 18,
 
     fontSize: 18,
     fontWeight: "bold",
-  },
-  inputEmail: {
-    marginTop: 12,
-
-    height: 50,
-    backgroundColor: "#fff",
-    borderRadius: 4,
-  },
-  inputPassword: {
-    marginTop: 18,
-
-    height: 50,
-    backgroundColor: "#fff",
-    borderRadius: 4,
+    color: "#3d3d3d",
   },
   buttonLogin: {
     marginTop: 40,
@@ -50,7 +41,7 @@ export default StyleSheet.create({
     justifyContent: "center",
   },
   textButtonLogin: {
-    fontSize: 20,
+    fontSize: 18,
     color: "#f6f9f7",
     fontWeight: "bold",
   },
