@@ -16,7 +16,6 @@ export default function Login() {
   function navigateToRegister() {
     navigation.navigate("register");
   }
-
   return (
     <View style={styles.container}>
       <View style={styles.viewMenu}>
@@ -44,33 +43,21 @@ export default function Login() {
         <Text style={styles.textButtonLogin}>Entrar</Text>
       </TouchableOpacity>
 
-      <View>
-        <View style={styles.viewSocial}>
-          <TouchableOpacity style={styles.facebook}>
-            <FontAwesome name="facebook-square" color="#fff" size={14} />
-            <Text style={styles.textFacebook}>Facebook</Text>
-          </TouchableOpacity>
+      <View style={styles.viewSocial}>
+        <TouchableOpacity style={styles.facebook}>
+          <FontAwesome name="facebook-square" color="#fff" size={14} />
+          <Text style={styles.textFacebook}>Facebook</Text>
+        </TouchableOpacity>
 
-          <TouchableOpacity style={styles.google}>
-            <FontAwesome name="google" color="#fff" size={14} />
-            <Text style={styles.textGoogle}>Google</Text>
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity style={styles.google}>
+          <FontAwesome name="google" color="#fff" size={14} />
+          <Text style={styles.textGoogle}>Google</Text>
+        </TouchableOpacity>
       </View>
 
       <TouchableOpacity onPress={navigateToRegister} style={styles.register}>
         <Feather name="log-in" size={14} color="#2d5a35" />
         <Text style={styles.textRegister}>Tornar-se um Mando</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.viewMando}>
-        <FontAwesome5
-          style={styles.iconMando}
-          name="mandalorian"
-          size={12}
-          color="#000"
-        />
-        <Text style={styles.textMando}>The Mandalorian</Text>
       </TouchableOpacity>
     </View>
   );
