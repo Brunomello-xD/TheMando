@@ -22,16 +22,11 @@ export default function cases() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={styles.viewMenu}>
         <Image source={logoImg} />
-        <Text style={styles.headerText}>Bem-vindo!</Text>
+        <Text style={styles.textWelcome}>Bem-vindo!</Text>
       </View>
 
-      <Text style={styles.description}>
-        Escolha um dos tópicos abaixo e interaja com outros Mandaloriano.
-      </Text>
-
-      {/**Botão cadastrar novo tópico */}
       <View style={styles.viewNewCase}>
         <TouchableOpacity
           style={styles.buttonNewCase}
@@ -41,6 +36,12 @@ export default function cases() {
           <Text style={styles.textButtonNewCase}>Novo tópico</Text>
         </TouchableOpacity>
       </View>
+
+      <Text style={styles.description}>
+        Escolha um dos tópicos abaixo e interaja com outros Mandaloriano.
+      </Text>
+
+      {/**Botão cadastrar novo tópico */}
 
       <FlatList
         data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}

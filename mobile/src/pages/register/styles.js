@@ -1,45 +1,51 @@
 import { StyleSheet } from "react-native";
 import Constants from "expo-constants";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    marginTop: Constants.statusBarHeight + 24,
+    marginTop: Constants.statusBarHeight,
   },
   viewMenu: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    height: hp("20%"),
   },
   textWelcome: {
-    marginTop: 24,
-
-    fontSize: 20,
+    fontSize: hp("3.5%"),
     fontWeight: "bold",
     fontStyle: "italic",
     color: "#3d3d3d",
   },
   textCadastro: {
-    marginTop: 18,
-    marginBottom: 18,
+    marginBottom: wp("2.5%"),
 
-    fontSize: 18,
+    fontSize: hp("3%"),
     fontWeight: "bold",
-    color: "#3d3d3d",
+    color: "#000",
+  },
+  form: {
+    height: hp("43%"),
+    paddingVertical: hp("1%"),
   },
   buttonCreate: {
-    marginTop: 18,
+    marginTop: wp("4.5%"),
 
-    height: 55,
+    height: hp("9.5%"),
     backgroundColor: "#2d5a35",
     borderRadius: 4,
     alignItems: "center",
     justifyContent: "center",
   },
   textButtonCreate: {
-    fontSize: 18,
+    fontSize: hp("3%"),
+    color: "#f6f9f7",
     fontWeight: "bold",
-    color: "#fff",
   },
 });

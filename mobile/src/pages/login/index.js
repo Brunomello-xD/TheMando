@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
-import { FontAwesome5, FontAwesome, Feather } from "@expo/vector-icons";
+import { FontAwesome, Feather } from "@expo/vector-icons";
 import { Input } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { useNavigation } from "@react-navigation/native";
@@ -16,6 +16,7 @@ export default function Login() {
   function navigateToRegister() {
     navigation.navigate("register");
   }
+
   return (
     <View style={styles.container}>
       <View style={styles.viewMenu}>
@@ -24,20 +25,23 @@ export default function Login() {
       </View>
 
       <Text style={styles.textLogin}>Faça seu Login</Text>
-      <Input
-        placeholder="  E-mail"
-        leftIcon={<Icon name="envelope" size={18} color="black" />}
-      />
-      <Input
-        secureTextEntry={true}
-        placeholder=" Senha"
-        leftIcon={<Icon name="lock" size={22} color="black" />}
-      />
 
-      <TouchableOpacity style={styles.buttonRecover}>
-        <Feather name="key" size={14} color="#3d3d3d" />
-        <Text style={styles.textRecover}>Esqueci minha senha</Text>
-      </TouchableOpacity>
+      <View style={styles.form}>
+        <Input
+          placeholder=" E-mail"
+          leftIcon={<Icon name="envelope" size={18} color="black" />}
+        />
+        <Input
+          secureTextEntry={true}
+          placeholder=" Senha"
+          leftIcon={<Icon name="lock" size={24} color="black" />}
+        />
+
+        <TouchableOpacity style={styles.buttonRecover}>
+          <Feather name="key" size={14} color="#3d3d3d" />
+          <Text style={styles.textRecover}>Esqueci minha senha</Text>
+        </TouchableOpacity>
+      </View>
 
       <TouchableOpacity style={styles.buttonLogin}>
         <Text style={styles.textButtonLogin}>Entrar</Text>

@@ -17,23 +17,25 @@ export default function register() {
 
       <Text style={styles.textCadastro}>Cadastro</Text>
 
-      <Input
-        placeholder=" Nome"
-        leftIcon={<Icon name="user" size={18} color="black" />}
-      />
-      <Input
-        placeholder=" Nome de usuário"
-        leftIcon={<Icon name="user-secret" size={18} color="black" />}
-      />
-      <Input
-        placeholder=" E-mail"
-        leftIcon={<Icon name="envelope" size={18} color="black" />}
-      />
-      <Input
-        secureTextEntry={true}
-        placeholder=" Senha"
-        leftIcon={<Icon name="lock" size={22} color="black" />}
-      />
+      <View style={styles.form}>
+        <Input
+          placeholder=" Nome"
+          leftIcon={<Icon name="user" size={18} color="black" />}
+        />
+        <Input
+          placeholder=" Nome de usuário"
+          leftIcon={<Icon name="user-secret" size={18} color="black" />}
+        />
+        <Input
+          placeholder=" E-mail"
+          leftIcon={<Icon name="envelope" size={18} color="black" />}
+        />
+        <Input
+          secureTextEntry={true}
+          placeholder=" Senha"
+          leftIcon={<Icon name="lock" size={22} color="black" />}
+        />
+      </View>
 
       <TouchableOpacity style={styles.buttonCreate}>
         <Text style={styles.textButtonCreate}>Cadastrar</Text>

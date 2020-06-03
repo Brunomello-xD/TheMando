@@ -1,81 +1,83 @@
 import { StyleSheet } from "react-native";
 import Constants from "expo-constants";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20,
+    marginTop: Constants.statusBarHeight,
   },
-  header: {
-    alignItems: "flex-start",
-    marginBottom: 30,
+  viewMenu: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: hp("15%"),
   },
   menuPerfil: {
     flexDirection: "row",
     justifyContent: "flex-start",
-    alignItems: "center",
   },
 
   imgPerfil: {
-    height: 15,
-    width: 15,
-    marginBottom: 4,
-    marginLeft: 4,
+    height: hp("2%"),
+    width: wp("4%"),
+    marginBottom: hp("0.8%"),
+    marginLeft: wp("1%"),
   },
   textMenuPerfil: {
     fontWeight: "bold",
-    marginLeft: 4,
+    marginLeft: wp("1%"),
     color: "#3b3b3b",
-    fontSize: 12,
+    fontSize: wp("3.2%"),
   },
   viewTopic: {
-    padding: 6,
+    padding: hp("1%"),
     borderRadius: 4,
     backgroundColor: "#fff",
-    marginBottom: 8,
+    marginBottom: hp("2%"),
   },
   titleTopic: {
-    fontSize: 16,
+    fontSize: wp("4.4%"),
     fontWeight: "bold",
-    marginBottom: 2,
+    marginBottom: hp("0.5%"),
     color: "#000",
   },
   descriptionTopic: {
     color: "#585858",
-    fontSize: 14,
+    fontSize: wp("4%"),
   },
   comment: {
-    fontSize: 14,
+    fontSize: wp("4%"),
     fontWeight: "bold",
-    marginBottom: 2,
+    marginBottom: hp("0.5%"),
   },
   commentText: {
     backgroundColor: "white",
-    height: 40,
+    height: hp("7%"),
     borderColor: "#395435",
     borderRadius: 4,
-    borderWidth: 1,
+    borderWidth: wp("0.3"),
   },
-  viewResp: {
-    marginTop: 4,
-    marginBottom: 12,
+  buttonResp: {
+    marginTop: hp("0.8%"),
+    marginBottom: hp("1%"),
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "flex-start",
-  },
-  buttonComment: {
-    marginRight: 4,
+    justifyContent: "flex-end",
   },
   textComment: {
     color: "#000",
-    fontSize: 13,
+    fontSize: wp("3.8%"),
   },
   commentList: {
-    padding: 6,
+    padding: hp("0.5%"),
     borderRadius: 4,
     backgroundColor: "#fff",
-    marginBottom: 16,
+    marginBottom: hp("1.5%"),
   },
   perfilUser: {
     flexDirection: "row",
@@ -83,18 +85,19 @@ export default StyleSheet.create({
     justifyContent: "flex-start",
   },
   imgPerfilComment: {
-    height: 15,
-    width: 15,
+    height: hp("1.6%"),
+    width: wp("3.6%"),
   },
   nameUser: {
-    fontSize: 16,
+    fontSize: wp("3.6%"),
     color: "#000",
     fontWeight: "bold",
-    marginLeft: 4,
+    marginLeft: wp("1%"),
   },
   commentUser: {
-    fontSize: 14,
+    fontSize: wp("3.5%"),
     color: "#585858",
     marginBottom: 4,
+    fontWeight: "bold",
   },
 });

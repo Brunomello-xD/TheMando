@@ -15,7 +15,7 @@ export default function detailCase() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={styles.viewMenu}>
         <Image source={logoImg} />
       </View>
 
@@ -41,24 +41,21 @@ export default function detailCase() {
       <TextInput
         style={styles.commentText}
         multiline={true}
-        numberOfLines={4}
+        textAlign={"left"}
+        textAlignVertical={"top"}
+        numberOfLines={30}
         onChangeText={(text) => onChangeText(text)}
         value={value}
       ></TextInput>
 
-      <TouchableOpacity style={styles.viewResp}>
-        <Feather
-          style={styles.buttonComment}
-          name="corner-down-left"
-          size={14}
-          color={"#000"}
-        >
+      <TouchableOpacity style={styles.buttonResp}>
+        <Feather name="corner-down-left" size={14} color={"#000"}>
           <Text style={styles.textComment}> Responder</Text>
         </Feather>
       </TouchableOpacity>
 
       <FlatList
-        data={[1, 2, 3, 4, 5, 6]}
+        data={[1, 2, 3, 4, 5, 6, 7]}
         style={styles.viewComments}
         keyExtractor={(commentList) => String(commentList)}
         showsVerticalScrollIndicator={false}
