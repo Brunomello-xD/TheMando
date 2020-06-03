@@ -31,11 +31,10 @@ export default StyleSheet.create({
     color: "#000",
   },
   form: {
-    height: hp("43%"),
     paddingVertical: hp("1%"),
   },
   buttonCreate: {
-    marginTop: wp("4.5%"),
+    marginTop: wp("0%"),
 
     height: hp("9.5%"),
     backgroundColor: "#2d5a35",
