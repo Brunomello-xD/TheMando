@@ -13,23 +13,33 @@ export default function Cases() {
     <div className="main">
       <div className="mainMenu">
         <section className="contact">
-          <a href="https://github.com/Brunomello-xD" target="_blank">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Brunomello-xD"
+          >
             <FaGithub className="github" size={12} color="#010601" />
           </a>
 
-          <a href="https://github.com/Brunomello-xD" target="_blank">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Brunomello-xD"
+          >
             <h1 className="github">GitHub</h1>
           </a>
 
           <a
-            href="https://www.linkedin.com/in/bruno-mello-14058819b/"
             target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/bruno-mello-14058819b/"
           >
             <FaLinkedin className="linkedin" size={12} color="#0c77b6" />
           </a>
           <a
-            href="https://www.linkedin.com/in/bruno-mello-14058819b/"
             target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/bruno-mello-14058819b/"
           >
             <h1 className="linkedin">LinkedIn</h1>
           </a>

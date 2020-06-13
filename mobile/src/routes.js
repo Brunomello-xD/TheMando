@@ -14,9 +14,10 @@ export default function Routes() {
   return (
     <NavigationContainer>
       <AppStack.Navigator screenOptions={{ headerShown: false }}>
+        <AppStack.Screen name="cases" component={cases} />
         <AppStack.Screen name="login" component={login} />
         <AppStack.Screen name="register" component={register} />
-        <AppStack.Screen name="cases" component={cases} />
+
         <AppStack.Screen name="detailCase" component={detailCase} />
         <AppStack.Screen name="newCase" component={newCase} />
       </AppStack.Navigator>
