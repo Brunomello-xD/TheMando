@@ -29,10 +29,14 @@ export default function Login() {
       <View style={styles.form}>
         <Input
           placeholder=" E-mail"
+          autoCapitalize="none"
+          autoCorrect={false}
           leftIcon={<Icon name="envelope" size={18} color="black" />}
         />
         <Input
           secureTextEntry={true}
+          autoCapitalize="none"
+          autoCorrect={false}
           placeholder=" Senha"
           leftIcon={<Icon name="lock" size={24} color="black" />}
         />
