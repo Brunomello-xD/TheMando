@@ -1,16 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { FontAwesome, Feather } from "@expo/vector-icons";
 import { Input } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { useNavigation } from "@react-navigation/native";
+import * as firebase from "firebase";
 
 import styles from "./styles";
 
 import logoImg from "../../assets/logo.png";
 
-export default function Login() {
+//Initialize Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyBqnbrWfATNvAisHUqiLAkqh1AyD1tqODs",
+  authDomain: "the-mando-7521b.firebaseapp.com",
+  databaseURL: "https://the-mando-7521b.firebaseio.com",
+  projectId: "the-mando-7521b",
+  storageBucket: "the-mando-7521b.appspot.com",
+};
+
+firebase.initializeApp(firebaseConfig);
+
+export default function login() {
   const navigation = useNavigation();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const loginUser = async (email, password) => {
+    try {
+      const user = await firebase
+        .auth()
+        .signInWithEmailAndPassword(email, password);
+
+      console.log(user);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   //Botão "Tornar-se um Mando"
   function navigateToRegister() {
@@ -32,6 +58,7 @@ export default function Login() {
           autoCapitalize="none"
           autoCorrect={false}
           leftIcon={<Icon name="envelope" size={18} color="black" />}
+          onChangeText={(email) => setEmail(email)}
         />
         <Input
           secureTextEntry={true}
@@ -39,6 +66,7 @@ export default function Login() {
           autoCorrect={false}
           placeholder=" Senha"
           leftIcon={<Icon name="lock" size={24} color="black" />}
+          onChangeText={(password) => setPassword(password)}
         />
 
         <TouchableOpacity style={styles.buttonRecover}>
@@ -47,7 +75,10 @@ export default function Login() {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity style={styles.buttonLogin}>
+      <TouchableOpacity
+        style={styles.buttonLogin}
+        onPress={() => loginUser(email, password)}
+      >
         <Text style={styles.textButtonLogin}>Entrar</Text>
       </TouchableOpacity>
 
