@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { FontAwesome, Feather } from "@expo/vector-icons";
 import { Input } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { useNavigation } from "@react-navigation/native";
 import * as firebase from "firebase";
+import * as Facebook from "expo-facebook";
 
 import styles from "./styles";
 
 import logoImg from "../../assets/logo.png";
+import { Alert } from "react-native";
 
 //Initialize Firebase
 const firebaseConfig = {
@@ -23,9 +25,12 @@ firebase.initializeApp(firebaseConfig);
 
 export default function login() {
   const navigation = useNavigation();
+
+  //login with email and password
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  //login with email and password
   const loginUser = async (email, password) => {
     try {
       const user = await firebase
@@ -38,7 +43,26 @@ export default function login() {
     }
   };
 
-  //Botão "Tornar-se um Mando"
+  //login with Facebook
+  async function loginWithFacebook() {
+    try {
+      await Facebook.initializeAsync("541622219839564");
+      const { type, token } = await Facebook.logInWithReadPermissionsAsync({
+        permissions: ["public_profile"],
+      });
+      if (type === "success") {
+        const response = await fetch(
+          // Get the user's name using Facebook's Graph API
+          `https://graph.facebook.com/me?access_token=${token}`
+        );
+        Alert.alert("Sucess!", `Olá ${(await response.json()).name}!`);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  //Button "Tornar-se um Mando"
   function navigateToRegister() {
     navigation.navigate("register");
   }
@@ -83,7 +107,7 @@ export default function login() {
       </TouchableOpacity>
 
       <View style={styles.viewSocial}>
-        <TouchableOpacity style={styles.facebook}>
+        <TouchableOpacity style={styles.facebook} onPress={loginWithFacebook}>
           <FontAwesome name="facebook-square" color="#fff" size={14} />
           <Text style={styles.textFacebook}>Facebook</Text>
         </TouchableOpacity>
