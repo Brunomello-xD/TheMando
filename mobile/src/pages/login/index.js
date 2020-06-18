@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { FontAwesome, Feather } from "@expo/vector-icons";
 import { Input } from "react-native-elements";
@@ -30,7 +30,6 @@ export default function login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  //login with email and password
   const loginUser = async (email, password) => {
     try {
       const user = await firebase
@@ -52,10 +51,10 @@ export default function login() {
       });
       if (type === "success") {
         const response = await fetch(
-          // Get the user's name using Facebook's Graph API
+          //Get the user's name using Facebook's Graph API
           `https://graph.facebook.com/me?access_token=${token}`
         );
-        Alert.alert("Sucess!", `Olá ${(await response.json()).name}!`);
+        Alert.alert("Otário!", `Olá ${(await response.json()).name}!`);
       }
     } catch (error) {
       console.log(error);
